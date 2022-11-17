@@ -21,17 +21,17 @@ public class GraphicsPane extends Pane {
     private static void drawGraphic(){
 
         pane.getChildren().clear();
-        double barWidth = 400/students.size();
+        double barWidth = 250/students.size();
         double barHeight;
         double x;
         double y;
 
         for (int i=0; i<students.size(); i++){
-            barHeight = (Double)students.get(i).getFinalGrade(preGradeFactor)/6.0 * 500;
+            barHeight = (Double)students.get(i).getFinalGrade(preGradeFactor)/6.0 * 300;
             x = i*barWidth;
-            y= 500-barHeight;
+            y= 300-barHeight;
             Text nameText = new Text (students.get(i).getName());
-            nameText.getTransforms().add(new Translate (x+barWidth / 2, 500-10));
+            nameText.getTransforms().add(new Translate (x+barWidth / 2, 300-10));
             nameText.getTransforms().add(new Rotate (-90));
 
             Rectangle gradeBar = new Rectangle(x, y, barWidth, barHeight);
@@ -44,7 +44,7 @@ public class GraphicsPane extends Pane {
             pane.getChildren().add(gradeBar);
             pane.getChildren().add(nameText);
 
-            Double fourLineHeight = 500.0 - (4.0/6.0*500);
+            Double fourLineHeight = 300 - (4.0/6.0*300);
 
             Rectangle fourLine = new Rectangle(0,fourLineHeight,400, 5);
             fourLine.setFill(Color.GREEN);
