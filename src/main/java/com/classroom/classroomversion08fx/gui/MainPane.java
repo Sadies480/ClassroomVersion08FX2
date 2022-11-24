@@ -12,6 +12,7 @@ public class MainPane extends StackPane {
     Map<String, String> majorMap;
 
     public MainPane(Map<String, String> majorMap) {
+        StateModel stateModel = new StateModel();
 
         this.majorMap = majorMap;
 

@@ -13,4 +13,7 @@ public class Course {
     public ArrayList<Student> getStudents () {
         return students;
     }
+
+    public void sortStudents (boolean sortByGrade) {
+    }
 }
