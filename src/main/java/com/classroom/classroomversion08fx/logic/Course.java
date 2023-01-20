@@ -1,6 +1,7 @@
 package com.classroom.classroomversion08fx.logic;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class Course {
 
@@ -15,5 +16,12 @@ public class Course {
     }
 
     public void sortStudents (boolean sortByGrade) {
+        if (sortByGrade) {
+            students.sort((s1, s2) -> s2.getFinalGrade().compareTo(s1.getFinalGrade()));
+        } else {
+            students.sort(Comparator.comparing (Student::getName));
+
+
+        }
     }
 }

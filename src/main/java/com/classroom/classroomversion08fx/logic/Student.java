@@ -28,4 +28,8 @@ public class Student {
         else if (this instanceof IrregularStudent) return "*";
         else return "Student";
     }
+
+    public <T> Comparable getFinalGrade () {
+        return null;
+    }
 }
