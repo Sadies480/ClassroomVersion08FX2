@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="139.0" y="1057.0">com.classroom.classroomversion08fx.gui.StateObserver</node>
+    <node x="236.0" y="522.5">com.classroom.classroomversion08fx.logic.Course</node>
+    <node x="620.0" y="1046.0">com.classroom.classroomversion08fx.io.CourseDataReader</node>
+    <node x="68.5" y="1885.0">com.classroom.classroomversion08fx.io.MajorReader</node>
+    <node x="25.5" y="-194.5">com.classroom.classroomversion08fx.logic.IrregularStudent</node>
+    <node x="231.16666666666669" y="2043.5">com.classroom.classroomversion08fx.MainApp</node>
+    <node x="-89.0" y="977.0">com.classroom.classroomversion08fx.gui.GraphicsPane</node>
+    <node x="516.5" y="805.0">com.classroom.classroomversion08fx.io.DataReaderText</node>
+    <node x="73.0" y="229.5">com.classroom.classroomversion08fx.logic.Student</node>
+    <node x="-194.0" y="1897.0">com.classroom.classroomversion08fx.gui.MainPane</node>
+    <node x="-508.265625" y="1310.546875">com.classroom.classroomversion08fx.gui.StateModel</node>
+    <node x="495.5" y="1465.0">com.classroom.classroomversion08fx.gui.ControlPane</node>
+    <node x="550.5" y="-205.5">com.classroom.classroomversion08fx.logic.RegularStudent</node>
+    <node x="717.5" y="805.5">com.classroom.classroomversion08fx.io.DataReaderCSV</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.classroom.classroomversion08fx.gui.StateModel" target="com.classroom.classroomversion08fx.gui.StateModel" relationship="DEPENDENCY">
+      <point x="15.0" y="128.0" />
+      <point x="-370.765625" y="1584.046875" />
+      <point x="-81.5" y="1584.046875" />
+      <point x="-81.5" y="1453.547" />
+      <point x="122.5" y="15.000125000000025" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.CourseDataReader" target="com.classroom.classroomversion08fx.logic.Course" relationship="DEPENDENCY">
+      <point x="-164.0" y="0.0" />
+      <point x="446.0" y="1083.0" />
+      <point x="446.0" y="710.0" />
+      <point x="359.0" y="710.0" />
+      <point x="15.0" y="60.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.ControlPane" target="com.classroom.classroomversion08fx.gui.ControlPane" relationship="DEPENDENCY">
+      <point x="0.0" y="-38.0" />
+      <point x="664.0" y="1408.547" />
+      <point x="850.0" y="1408.547" />
+      <point x="850.0" y="1488.0" />
+      <point x="168.5" y="-15.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.ControlPane" target="com.classroom.classroomversion08fx.MainApp" relationship="DEPENDENCY">
+      <point x="-15.0" y="38.0" />
+      <point x="649.0" y="2118.0" />
+      <point x="92.83333333333337" y="15.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.ControlPane" target="com.classroom.classroomversion08fx.gui.GraphicsPane" relationship="TO_ONE">
+      <point x="168.5" y="15.0" />
+      <point x="965.5" y="1518.0" />
+      <point x="965.5" y="-223.0" />
+      <point x="-11.0" y="-223.0" />
+      <point x="-15.0" y="-106.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.StateModel" target="com.classroom.classroomversion08fx.logic.Course" relationship="TO_ONE">
+      <point x="122.49962499999998" y="1.2500000002546585E-4" />
+      <point x="301.5" y="1438.547" />
+      <point x="301.5" y="1569.0" />
+      <point x="344.0" y="1569.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.CourseDataReader" target="com.classroom.classroomversion08fx.io.DataReaderCSV" relationship="CREATE">
+      <point x="35.0" y="-37.0" />
+      <point x="15.0" y="37.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.MainApp" target="com.classroom.classroomversion08fx.logic.Course" relationship="DEPENDENCY">
+      <point x="92.83300000000003" y="-15.0" />
+      <point x="446.0" y="2088.0" />
+      <point x="446.0" y="710.0" />
+      <point x="359.0" y="710.0" />
+      <point x="15.0" y="60.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.DataReaderCSV" target="com.classroom.classroomversion08fx.logic.RegularStudent" relationship="CREATE">
+      <point x="-77.0" y="-37.5" />
+      <point x="727.0" y="765.0" />
+      <point x="819.0" y="765.0" />
+      <point x="75.0" y="48.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.DataReaderCSV" target="com.classroom.classroomversion08fx.io.CourseDataReader" relationship="REALIZATION">
+      <point x="-71.5" y="37.5" />
+      <point x="732.5" y="955.0" />
+      <point x="784.0" y="955.0" />
+      <point x="0.0" y="-37.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.logic.Student" target="com.classroom.classroomversion08fx.logic.IrregularStudent" relationship="DEPENDENCY">
+      <point x="-20.0" y="-93.5" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.logic.RegularStudent" target="com.classroom.classroomversion08fx.logic.Student" relationship="GENERALIZATION">
+      <point x="-193.5" y="0.0" />
+      <point x="389.0" y="-157.0" />
+      <point x="389.0" y="308.0" />
+      <point x="111.0" y="-15.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.DataReaderText" target="com.classroom.classroomversion08fx.logic.IrregularStudent" relationship="CREATE">
+      <point x="0.0" y="-38.0" />
+      <point x="604.0" y="725.0" />
+      <point x="55.5" y="725.0" />
+      <point x="-108.5" y="37.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.MainApp" target="com.classroom.classroomversion08fx.io.MajorReader" relationship="CREATE">
+      <point x="-32.0" y="-59.5" />
+      <point x="108.0" y="38.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.GraphicsPane" target="com.classroom.classroomversion08fx.gui.GraphicsPane" relationship="DEPENDENCY">
+      <point x="15.0" y="106.0" />
+      <point x="19.0" y="1206.5" />
+      <point x="114.5" y="1206.5" />
+      <point x="114.5" y="1083.0" />
+      <point x="93.0" y="0.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.MainApp" target="com.classroom.classroomversion08fx.gui.MainPane" relationship="CREATE">
+      <point x="-92.83333333333331" y="0.0" />
+      <point x="-61.0" y="2103.0" />
+      <point x="15.0" y="26.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.MainPane" target="com.classroom.classroomversion08fx.gui.GraphicsPane" relationship="CREATE">
+      <point x="80.0" y="-26.0" />
+      <point x="0.0" y="106.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.DataReaderCSV" target="com.classroom.classroomversion08fx.logic.Student" relationship="DEPENDENCY">
+      <point x="0.0" y="37.5" />
+      <point x="804.0" y="1028.5" />
+      <point x="474.0" y="1028.5" />
+      <point x="474.0" y="323.0" />
+      <point x="111.0" y="0.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.DataReaderText" target="com.classroom.classroomversion08fx.logic.RegularStudent" relationship="CREATE">
+      <point x="-15.0" y="-38.0" />
+      <point x="589.0" y="765.0" />
+      <point x="819.0" y="765.0" />
+      <point x="75.0" y="48.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.logic.RegularStudent" target="com.classroom.classroomversion08fx.logic.RegularStudent" relationship="DEPENDENCY">
+      <point x="-193.5" y="-15.0" />
+      <point x="346.0" y="-172.0" />
+      <point x="346.0" y="-172.0" />
+      <point x="-193.5" y="-15.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.DataReaderText" target="com.classroom.classroomversion08fx.logic.Student" relationship="DEPENDENCY">
+      <point x="-87.5" y="0.0" />
+      <point x="474.0" y="843.0" />
+      <point x="474.0" y="323.0" />
+      <point x="111.0" y="0.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.DataReaderCSV" target="com.classroom.classroomversion08fx.logic.IrregularStudent" relationship="CREATE">
+      <point x="0.0" y="-37.5" />
+      <point x="804.0" y="725.0" />
+      <point x="55.5" y="725.0" />
+      <point x="-108.5" y="37.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.logic.Student" target="com.classroom.classroomversion08fx.logic.RegularStudent" relationship="DEPENDENCY">
+      <point x="111.0" y="15.0" />
+      <point x="346.0" y="338.0" />
+      <point x="346.0" y="-172.0" />
+      <point x="-193.5" y="-15.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.logic.Course" target="com.classroom.classroomversion08fx.logic.Student" relationship="TO_MANY">
+      <point x="0.0" y="-60.5" />
+      <point x="344.0" y="470.0" />
+      <point x="184.0" y="470.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.DataReaderCSV" target="com.classroom.classroomversion08fx.logic.Course" relationship="CREATE">
+      <point x="-15.0" y="-37.5" />
+      <point x="789.0" y="785.0" />
+      <point x="329.0" y="785.0" />
+      <point x="-15.0" y="60.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.StateModel" target="com.classroom.classroomversion08fx.gui.StateObserver" relationship="TO_MANY">
+      <point x="122.5" y="-14.999874999999975" />
+      <point x="224.0" y="1423.547" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.DataReaderText" target="com.classroom.classroomversion08fx.io.CourseDataReader" relationship="REALIZATION">
+      <point x="0.0" y="38.0" />
+      <point x="604.0" y="955.0" />
+      <point x="784.0" y="955.0" />
+      <point x="0.0" y="-37.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.logic.IrregularStudent" target="com.classroom.classroomversion08fx.logic.Student" relationship="GENERALIZATION">
+      <point x="138.5" y="0.0" />
+      <point x="389.0" y="-157.0" />
+      <point x="389.0" y="308.0" />
+      <point x="111.0" y="-15.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.CourseDataReader" target="com.classroom.classroomversion08fx.io.CourseDataReader" relationship="DEPENDENCY">
+      <point x="0.0" y="37.0" />
+      <point x="784.0" y="1353.5" />
+      <point x="784.0" y="1353.5" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.MainPane" target="com.classroom.classroomversion08fx.gui.ControlPane" relationship="CREATE">
+      <point x="0.0" y="26.0" />
+      <point x="-76.0" y="2180.0" />
+      <point x="679.0" y="2180.0" />
+      <point x="15.0" y="38.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.MainApp" target="com.classroom.classroomversion08fx.logic.Student" relationship="DEPENDENCY">
+      <point x="92.83300000000003" y="0.0" />
+      <point x="474.0" y="2103.0" />
+      <point x="474.0" y="323.0" />
+      <point x="111.0" y="0.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.GraphicsPane" target="com.classroom.classroomversion08fx.logic.Student" relationship="TO_MANY">
+      <point x="0.0" y="-106.0" />
+      <point x="4.0" y="470.0" />
+      <point x="184.0" y="470.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.ControlPane" target="com.classroom.classroomversion08fx.io.CourseDataReader" relationship="DEPENDENCY">
+      <point x="168.5" y="0.0" />
+      <point x="906.0" y="1503.0" />
+      <point x="906.0" y="1353.5" />
+      <point x="784.0" y="1353.5" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.ControlPane" target="com.classroom.classroomversion08fx.logic.Course" relationship="TO_ONE">
+      <point x="0.0" y="38.0" />
+      <point x="664.0" y="1569.0" />
+      <point x="344.0" y="1569.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.CourseDataReader" target="com.classroom.classroomversion08fx.io.DataReaderText" relationship="CREATE">
+      <point x="-156.5" y="-37.0" />
+      <point x="23.5" y="38.0" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.io.DataReaderText" target="com.classroom.classroomversion08fx.logic.Course" relationship="CREATE">
+      <point x="-41.0" y="-38.0" />
+      <point x="563.0" y="785.0" />
+      <point x="329.0" y="785.0" />
+      <point x="-15.0" y="60.5" />
+    </edge>
+    <edge source="com.classroom.classroomversion08fx.gui.MainPane" target="com.classroom.classroomversion08fx.gui.StateModel" relationship="CREATE">
+      <point x="-118.0" y="0.0" />
+      <point x="-385.765625" y="1923.0" />
+      <point x="0.0" y="128.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.0" showDependencies="true" x="385.5" y="2105.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
